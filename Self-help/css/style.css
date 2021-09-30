@@ -9,3 +9,23 @@ body {
     padding: 0;
     overflow: hidden;
 }
+
+ul.nav li {
+    float: left;
+}
+
+ul.nav li a {
+    display: block;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+}
+
+ul.nav li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.active {
+    background-color: yellow;
+}
