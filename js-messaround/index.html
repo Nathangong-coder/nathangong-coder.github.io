@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Demo</title>
+
 </head>
 
 <body>
@@ -24,6 +25,9 @@
     <img src="images/pic_bulboff.gif" alt="light bulb" id="my-image">
     <button onclick="document.getElementById('my-image').src='images/pic_bulbon.gif'">Turn on</button>
     <button onclick="document.getElementById('my-image').src='images/pic_bulboff.gif'">Turn off</button>
+    <p id="alice " style="size: 25px ">Hi. Do not click those buttons below to shrink or grow the text</p>
+    <button onclick="document.getElementById('alice').style.fontSize='500px';document.getElementById('alice')">Grow the text</button>
+    <button onclick="document.getElementById('alice').style.fontSize='10px';document.getElementById('alice').style.color='Green';document.getElementById('alice').style.fontStyle='italic';document.getElementById('alice').style.fontWeight='bold' ">Shrink the text</button>
 </body>
 
 </html>
