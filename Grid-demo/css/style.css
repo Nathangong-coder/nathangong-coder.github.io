@@ -68,6 +68,7 @@ ul.nav li a:hover {
 .sidenav {
     grid-column: 3;
     grid-row: 3/ span 5;
+    background-color: aquamarine;
 }
 
 .support {
