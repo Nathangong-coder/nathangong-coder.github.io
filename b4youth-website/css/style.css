@@ -1,3 +1,22 @@
 body {
     background-color: (196, 30, 58);
 }
+
+.nav {
+    list-style-type: none;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.nav.li {
+    float: left;
+}
+
+ul.nav.li a {
+    display: block;
+    background-color: (0, 4, 13);
+    padding: 8px 16px;
+    text-decoration: none;
+}
