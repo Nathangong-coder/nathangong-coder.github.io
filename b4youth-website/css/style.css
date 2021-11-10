@@ -29,3 +29,49 @@ ul.nav li a:hover {
 .active {
     background-color: darkgreen;
 }
+
+.losfeliz {
+    font-family: los-feliz, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.citadel {
+    font-family: citadel-inline, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.citadelbold {
+    font-family: citadel-solid, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main {
+    grid-column: 1/ span 2;
+    grid-row: 3;
+}
+
+.main2 {
+    grid-column: 1/ span 2;
+    grid-row: 5;
+}
+
+.sidenav {
+    grid-column: 3;
+    grid-row: 3/ span 5;
+    background-color: aquamarine;
+}
+
+.support {
+    grid-column: 1;
+    grid-row: 4;
+    background-color: red;
+}
+
+.support2 {
+    grid-column: 2;
+    grid-row: 4;
+    background-color: red;
+}
