@@ -1,10 +1,10 @@
 body {
-    background-color: rgb(196, 30, 58);
+    background-color: white;
 }
 
 .nav {
     list-style-type: none;
-    background-color: rgb(0, 4, 13);
+    background-color: rgb(196, 30, 58);
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -42,6 +42,13 @@ ul.nav li a:hover {
     font-style: normal;
 }
 
+.citadel-big {
+    font-family: citadel-inline, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+}
+
 .citadelbold {
     font-family: citadel-solid, serif;
     font-weight: 400;
@@ -55,7 +62,7 @@ ul.nav li a:hover {
 }
 
 .grid-item {
-    background-color: lightgreen;
+    background-color: red;
     text-align: center;
     font-size: 10px;
     padding: 20px;
@@ -63,29 +70,29 @@ ul.nav li a:hover {
 
 .main {
     grid-column: 1/ span 2;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 .main2 {
     grid-column: 1/ span 2;
-    grid-row: 5;
+    grid-row: 6;
 }
 
 .sidenav {
     grid-column: 3;
-    grid-row: 3/ span 5;
-    background-color: aquamarine;
+    grid-row: 4/ span 7;
+    background-color: red;
 }
 
 .support {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 5;
     background-color: red;
 }
 
 .support2 {
     grid-column: 2;
-    grid-row: 4;
+    grid-row: 5;
     background-color: red;
 }
 
@@ -95,6 +102,11 @@ ul.nav li a:hover {
 }
 
 .main-image {
+    grid-column: 1/ span 3;
+    grid-row: 3;
+}
+
+.h1 {
     grid-column: 1/ span 3;
     grid-row: 2;
 }
