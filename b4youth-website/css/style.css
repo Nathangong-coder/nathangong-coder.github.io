@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: rgb(231, 207, 138);
 }
 
 .nav {
@@ -36,6 +36,13 @@ ul.nav li a:hover {
     font-style: normal;
 }
 
+.losfeliz-big {
+    font-family: los-feliz, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+}
+
 .citadel {
     font-family: citadel-inline, serif;
     font-weight: 400;
@@ -46,7 +53,7 @@ ul.nav li a:hover {
     font-family: citadel-inline, serif;
     font-weight: 400;
     font-style: normal;
-    font-size: large;
+    font-size: x-large;
 }
 
 .citadelbold {
