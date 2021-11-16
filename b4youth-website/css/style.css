@@ -67,6 +67,10 @@ ul.nav li a:hover {
     color: white;
 }
 
+.white-text {
+    color: white;
+}
+
 .grid-container {
     display: grid;
     grid-gap: 10px;

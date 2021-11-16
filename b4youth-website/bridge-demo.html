@@ -15,16 +15,16 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="why.html">Why Bridge?</a></li>
-        <li>
-            <a href="picture-gallery.html">Pictures</a>
-        </li>
         <li class="active">
             <a href="bridge-demo.html">Demo</a>
         </li>
+        <li>
+            <a href="picture-gallery.html">Gallery</a>
+        </li>
     </ul>
-    <h2 class="citadel">To demonstrate how bridge is played, we will start with the basics. There are 52 cards used in the game of bridge (jokers aren't part of bridge), with the A being the biggest card. There are 4 suits, each with 13 cards: spades, hearts, diamonds and
+    <h2 class="citadel grid-item">To demonstrate how bridge is played, we will start with the basics. There are 52 cards used in the game of bridge (jokers aren't part of bridge), with the A being the biggest card. There are 4 suits, each with 13 cards: spades, hearts, diamonds and
         clubs. </h2><br>
-    <p class="citadelbold">What are the different suits? How many cards are in each suit?</p>
+    <p class="citadelbold">Q: What are the different suits? How many cards are in each suit?</p>
     <form>
         <input type="radio" id="52/14" name="question1_answer" value="52/14">
         <label for="52/14">52 suits and 14 cards in each suit</label><br>
@@ -35,9 +35,23 @@
         <input type="radio" id="52/13" name="question1_answer" value="52/13">
         <label for="52/13">52 suits and 13 cards in each suit</label><br><br>
     </form>
-    <h2>We first need to know what phases of bridge there are. There are 2 phases to bridge, the 1st is a bidding auction, where highest number & suit wins (up to 7NT). The 2nd is a playing aspect of the game, where you try to take as many tricks as you can
+    <button class="check" onclick="document.getElementById('52/13').innerHTML='Good job, that is correct!'">Check your answer</button>
+    <h2 class="citadel grid-item">We first need to know what phases of bridge there are. There are 2 phases to bridge, the 1st is a bidding auction, where highest number & suit wins (up to 7NT). The 2nd is a playing aspect of the game, where you try to take as many tricks as you can
         (a trick is won when everyone plays a card, and with you playing highest card in a suit [spade, heart, diamond, or club], or with the highest ruff [we'll talk about that later])</h2>
-    <button></button>
+    <p class="citadelbold">Q:What are the different phases of bridge?</p>
+    <form>
+        <input type="radio" id="2/bidding&playing" name="question2_answer" value="2/bidding&playying">
+        <label for="2/bidding&playing">There are 2 phases, the bidding phase and the playing phase</label><br>
+        <input type="radio" id="2/bidding&trick" name="question2_answer" value="2/bidding&trick">
+        <label for="2/bidding&trick">There are 2 phases, the bidding phase and the tricking phase</label><br>
+        <input type="radio" id="1/bidding" name="question2_answer" value="1/bidding">
+        <label for="1/bidding">There is 1 phase, the bidding phase.</label><br>
+        <input type="radio" id="1/playing" name="question2_answer" value="1/playing">
+        <label for="1/playing">There is 1 phase, the playing phase. </label><br>
+    </form>
+    <button class="check" onclick="document.getElementById('2/bidding&playing').innerHTML='Good job, that is correct!'">Check your 2nd question answer</button>
+    <h2 class="citadel"></h2>
+    <p class="citadelbold">Q:</p>
 </body>
 
 </html>
