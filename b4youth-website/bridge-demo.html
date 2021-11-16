@@ -22,8 +22,8 @@
             <a href="picture-gallery.html">Gallery</a>
         </li>
     </ul>
-    <h2 class="citadel grid-item">To demonstrate how bridge is played, we will start with the basics. There are 52 cards used in the game of bridge (jokers aren't part of bridge), with the A being the biggest card. There are 4 suits, each with 13 cards: spades, hearts, diamonds and
-        clubs. </h2><br>
+    <h1 class="losfeliz-big grid-item">To demonstrate how bridge is played, we will start with the basics. There are 52 cards used in the game of bridge (jokers aren't part of bridge), with the A being the biggest card. There are 4 suits, each with 13 cards: spades, hearts, diamonds and
+        clubs. Bridge is a two-player game, with a key part of the game having communication between you and your partner.</h1><br>
     <p class="citadelbold">Q: What are the different suits? How many cards are in each suit?</p>
     <form>
         <input type="radio" id="52/14" name="question1_answer" value="52/14">
@@ -36,9 +36,9 @@
         <label for="52/13">52 suits and 13 cards in each suit</label><br><br>
     </form>
     <button class="check" onclick="document.getElementById('52/13').innerHTML='Good job, that is correct!'">Check your answer</button>
-    <h2 class="citadel grid-item">We first need to know what phases of bridge there are. There are 2 phases to bridge, the 1st is a bidding auction, where highest number & suit wins (up to 7NT). The 2nd is a playing aspect of the game, where you try to take as many tricks as you can
-        (a trick is won when everyone plays a card, and with you playing highest card in a suit [spade, heart, diamond, or club], or with the highest ruff [we'll talk about that later])</h2>
-    <p class="citadelbold">Q:What are the different phases of bridge?</p>
+    <h1 class="losfeliz-big grid-item">We first need to know what phases of bridge there are. There are 2 phases to bridge, the 1st is a bidding auction, where highest number & suit wins (up to 7NT). The 2nd is a playing aspect of the game, where you try to take as many tricks as you can
+        (a trick is won when everyone plays a card, and with you playing highest card in a suit [spade, heart, diamond, or club], or with the highest ruff [we'll talk about that later])</h1>
+    <p class="citadelbold">Q: What are the different phases of bridge?</p>
     <form>
         <input type="radio" id="2/bidding&playing" name="question2_answer" value="2/bidding&playying">
         <label for="2/bidding&playing">There are 2 phases, the bidding phase and the playing phase</label><br>
@@ -47,11 +47,43 @@
         <input type="radio" id="1/bidding" name="question2_answer" value="1/bidding">
         <label for="1/bidding">There is 1 phase, the bidding phase.</label><br>
         <input type="radio" id="1/playing" name="question2_answer" value="1/playing">
-        <label for="1/playing">There is 1 phase, the playing phase. </label><br>
+        <label for="1/playing">There is 1 phase, the playing phase. </label><br><br>
     </form>
     <button class="check" onclick="document.getElementById('2/bidding&playing').innerHTML='Good job, that is correct!'">Check your 2nd question answer</button>
-    <h2 class="citadel"></h2>
-    <p class="citadelbold">Q:</p>
+    <h1 class="losfeliz-big grid-item">In the bidding phase, you fight for the highest contract in an auction. There are 7 levels, the lowest level being the 1 level, and the highest being the 7 level. When you bid, you are communicating with your partner about what you have, and you want
+        to find some place where you and your partner can get the tricks that you promised (the 1st level promises getting 7 tricks, 2nd level promises getting 8, with the last level, the 7th level promises getting all the tricks. </h1>
+    <p class="citadelbold">Q: How many tricks do you promise to get if you bid at the 6 level?</p>
+    <form>
+        <input type="radio" id="12" name="question3_answer" value="12">
+        <label for="12">You promise to get 12 tricks.</label><br>
+        <input type="radio" id="13" name="question3_answer" value="13">
+        <label for="13">You promise to get 13 tricks.</label><br>
+        <input type="radio" id="11" name="question3_answer" value="11">
+        <label for="11">You promise to get 11 tricks.</label><br>
+        <input type="radio" id="10" name="question3_answer" value="10">
+        <label for="10">You promise to get 10 tricks</label><br><br>
+    </form>
+    <button class="check" onclick="document.getElementById('12').innerHTML='Good job, that is the correct answer!'">Check your 3rd question answer</button>
+    <h1 class="losfeliz-big grid-item">There is also a hierachy of suits in the bidding, with the clubs being the lowest, then diamonds, then hearts, then spades, and finally NT. The highest contract is 7NT. When anybody bids before you, you need to bid something higher than what they
+        bid in ranking. For example, the opponent or partner before bid 1NT, you can only bid anything 2 clubs or higher.
+    </h1>
+    <h1 class="losfeliz-big grid-item">
+        In an auction, if you don't think you can promise anything higher, you can also pass. There is also a double/redouble bid, but that is when you don't think your opponents can follow through on their promise and you want to punish them (the redouble bid
+        is when you think you can follow through on you/your partner's promise). The pictures below shows the ranking of the suits and an example bidding auction.</h1>
+    <img src="image/Bidding box.gif" style="height:500px">
+    <img src="image/Example auction.PNG" style="height: 500px;"><br>
+    <p class="citadelbold">Q: What is the hierachy of the suits?</p>
+    <form>
+        <input type="radio" id="C/D/H/S/NT" name="question4_answer" value="C/D/H/S/NT">
+        <label for="C/D/H/S/NT">Clubs, Diamonds, Hearts, Spades, No-Trump</label><br>
+        <input type="radio" id="H/D/S/C/NT" name="question4_answer" value="H/D/S/C/NT">
+        <label for="H/D/S/C/NT">Hearts, Diamonds, Spades, Clubs, No-Trump</label><br>
+        <input type="radio" id="NT/D/H/S/C" name="question4_answer" value="NT/D/H/S/C">
+        <label for="NT/D/H/S/C">No-Trump, Diamonds, Hearts, Spades, Clubs</label><br>
+        <input type="radio" id="S/D/H/NT/C" name="question4_answer" value="S/D/H/NT/C">
+        <label for="S/D/H/NT/C">Spades, Diamonds, Hearts, No-Trump, Clubs</label><br><br>
+    </form>
+    <button class="check" onclick="document.getElementById('C/D/H/S/NT').innerHTML='Good job, that is the correct answer!'">Check your 4th question answer</button>
 </body>
 
 </html>
