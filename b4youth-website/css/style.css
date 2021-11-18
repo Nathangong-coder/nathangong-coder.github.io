@@ -95,7 +95,7 @@
     
     .sidenav {
         grid-column: 3;
-        grid-row: 4/ span 7;
+        grid-row: 4/ span 5;
         background-color: rgb(50, 50, 50);
     }
     
