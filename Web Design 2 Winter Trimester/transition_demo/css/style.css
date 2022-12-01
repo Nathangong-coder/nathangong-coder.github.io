@@ -2,6 +2,36 @@ body {
     background-color: gray;
 }
 
+.nav {
+    list-style-type: none;
+    background-color: darkgray;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.nav li {
+    float: left;
+}
+
+ul.nav li a {
+    display: block;
+    padding: 8px 16px;
+    color: purple;
+    text-decoration: none;
+    text-decoration: none;
+    text-decoration: none;
+}
+
+ul.nav li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.active {
+    background-color: darkseagreen;
+}
+
 .box {
     width: 200px;
     height: 200px;
