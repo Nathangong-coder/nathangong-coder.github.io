@@ -1,0 +1,27 @@
+.nav {
+    list-style-type: none;
+    background-color: rgb(63, 63, 63);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.nav li {
+    float: left;
+}
+
+ul.nav li a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+ul.nav li a:hover {
+    background-color: rgb(0, 70, 0);
+    color: white;
+}
+
+.active {
+    background-color: darkgreen;
+}
