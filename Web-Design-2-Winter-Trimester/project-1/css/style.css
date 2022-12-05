@@ -1,5 +1,42 @@
 body {
-    background-color: rgb(235, 211, 56);
+    background-color: rgb(255, 183, 50);
+}
+
+.losfeliz {
+    font-family: los-feliz, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.losfeliz-big {
+    font-family: los-feliz, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    color: black;
+}
+
+.citadel {
+    font-family: citadel-inline, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.citadel-big {
+    font-family: citadel-inline, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    color: black;
+}
+
+.citadelbold {
+    font-family: citadel-solid, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
 }
 
 .nav {
@@ -32,6 +69,47 @@ ul.nav li a:hover {
     background-color: #FC766AFF;
 }
 
+.susbox {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    margin: 40px auto;
+    animation-name: weird-box-to-circle;
+    animation-duration: 10s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.99, 0.99, 0.55, 0.955);
+    animation-direction: alternate;
+}
+
+@keyframes weird-box-to-circle {
+    0% {
+        border-radius: 0;
+        background-color: turquoise;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-radius: 75% 0 0 0;
+        background-color: aqua;
+        transform: rotate(100deg);
+    }
+    50% {
+        border-radius: 75% 50% 0 0;
+        background-color: aquamarine;
+        transform: rotate(60deg);
+    }
+    75% {
+        border-radius: 50% 75% 25% 0;
+        background-color: aqua;
+        transform: rotate(175deg);
+    }
+    100% {
+        border-radius: 75% 90% 10% 20%;
+        background-color: turquoise;
+        transform: rotate(10deg);
+    }
+}
+
 .grid-container {
     display: grid;
     grid-gap: 10px;
@@ -59,9 +137,10 @@ ul.nav li a:hover {
     grid-row: 4;
 }
 
-.main2 {
-    grid-column: 1/ span 2;
-    grid-row: 6;
+.mainimg {
+    grid-column: 1/ span 3;
+    grid-row: 4;
+    margin: auto;
 }
 
 .sidenav {
@@ -69,7 +148,7 @@ ul.nav li a:hover {
     grid-row: 4/ span 5;
 }
 
-.support {
-    grid-column: 1;
+.main2 {
+    grid-column: 1/ span 2;
     grid-row: 5;
 }
