@@ -1,0 +1,36 @@
+.losfeliz {
+    font-family: los-feliz, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.losfeliz-big {
+    font-family: los-feliz, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    color: black;
+}
+
+.citadel {
+    font-family: citadel-inline, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.citadel-big {
+    font-family: citadel-inline, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    color: black;
+}
+
+.citadelbold {
+    font-family: citadel-solid, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
