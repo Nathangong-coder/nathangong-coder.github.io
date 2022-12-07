@@ -80,6 +80,7 @@ ul.nav li a:hover {
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.99, 0.99, 0.55, 0.955);
     animation-direction: alternate;
+    display: none;
 }
 
 @keyframes weird-box-to-circle {

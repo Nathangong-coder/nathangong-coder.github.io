@@ -11,7 +11,38 @@
     <!-- From W3Schools, is the latest compiled JavaScript of Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+        function imageRNG() {
+            imageNum = Math.floor(Math.random() * 2);
+            if (imageNum < 2) {
+                document.getElementById('changed-image').src = 'images/cursed-christmas-image-1.jpg';
+            }
+            if (imageNum = 2) {
+                document.getElementById('changed-image').src = 'images/cursed-christmas-image-2.png';
+            }
+        }
+
+        function colorRNG() {
+            colorNum = Math.floor(Math.random() * 5);
+            if (imageNum = 0) {
+                document.getElementById('cursed-header').style.color = 'blue';
+            }
+            if (imageNum = 1) {
+                document.getElementById('cursed-header').style.color = 'green';
+            }
+            if (imageNum = 2) {
+                document.getElementById('cursed-header').style.color = 'purple';
+            }
+            if (imageNum = 3) {
+                document.getElementById('cursed-header').style.color = 'yellow';
+            }
+            if (imageNum > 3) {
+                document.getElementById('cursed-header').style.color = 'orange';
+            }
+
+        }
+    </script>
 </head>
 
 <body>
@@ -27,20 +58,20 @@
                 <a href="cursed.html">Cursed</a>
             </li>
         </ul>
-        <h1 class="h1 losfeliz grid-item">Be warned, this website is cursed! Leave while you still can!</h1>
+        <h1 class="h1 losfeliz grid-item" id="cursed-header">Be warned, this website is cursed! Leave while you still can!</h1>
+        <img class="grid-item mainimg" src="images/cute-christmas-image.png" alt="Don't click the buttons, or else you'll cursify this image!" id="changed-image">
         <!--Have the cursify button add a random font and color to the header text-->
         <!--Have the cursify button also change the cute image to a sus image-->
-        <button class="grid-item losfeliz-big">Cursify!</button>
+        <button class="grid-item losfeliz-big" onclick="imageRNG(); colorRNG()">Cursify!</button>
         <!--Will change the image to one of 4 random cursed images-->
-        <button class="grid-item losfeliz-big">Random!</button>
+        <button class="grid-item losfeliz-big" onclick="">Random!</button>
         <!--Have the super curse button change the text to 1 of 4 things-->
-        <!--Have this super curse button also unhide the sus box-->
-        <button class="grid-item losfeliz-big">Super Curse!</button>
+        <!--Sebhastian (https://sebhastian.com/javascript-show-hide-div-onclick-toggle/) described how to change the display of a div, changes display from none to a block display (regular button display)-->
+        <button class="grid-item losfeliz-big" onclick="document.getElementById('cursed-box').style.display='block';">Super Curse!</button>
         <!-- make sure to add a button, where onclick it changes the text size
             one button to change text color
             one button to change text itself-->
-        <img class="grid-item mainimg" src="images/cute-christmas-image.jpg" alt="Don't click the buttons, or else you'll cursify this image!">
-        <div class="susbox"></div>
+        <div id="cursed-box" class="susbox"></div>
     </div>
 </body>
 
