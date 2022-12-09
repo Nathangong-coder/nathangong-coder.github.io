@@ -153,3 +153,18 @@ ul.nav li a:hover {
     grid-column: 1/ span 2;
     grid-row: 5;
 }
+
+.hidden-footer .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-align: center;
+    display: none;
+}
+
+.hidden-footer:hover .footer {
+    display: block;
+}

@@ -64,10 +64,9 @@
         <!--Have the cursify button also change the cute image to a sus image-->
         <button class="grid-item losfeliz-big" onclick="imageRNG(); colorRNG()">Cursify!</button>
         <!--Will change the image to one of 4 random cursed images-->
-        <button class="grid-item losfeliz-big" onclick="">Random!</button>
+        <button class="grid-item losfeliz-big" onclick="document.getElementById('cursed-header').innerHTML='YOU HAVE CURSED YOURSELF!';document.getElementById('cursed-header').style.color='red';">Random!</button>
         <!--Have the super curse button change the text to 1 of 4 things-->
-        <!--Sebhastian (https://sebhastian.com/javascript-show-hide-div-onclick-toggle/) described how to change the display of a div, changes display from none to a block display (regular button display)-->
-        <button class="grid-item losfeliz-big" onclick="document.getElementById('cursed-box').style.display='block';">Super Curse!</button>
+        <button class="grid-item losfeliz-big" onclick="document.getElementById('cursed-box').style.display='block'; document.getElementById('cursed-header').style.fontSize='300px';document.getElementById('cursed-header').style.fontWeight='bold';">Super Curse!</button>
         <!-- make sure to add a button, where onclick it changes the text size
             one button to change text color
             one button to change text itself-->
