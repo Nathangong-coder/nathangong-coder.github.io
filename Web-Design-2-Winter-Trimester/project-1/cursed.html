@@ -42,6 +42,17 @@
             }
 
         }
+
+        function regularCurse() {
+            document.getElementById('cursed-header').innerHTML = 'YOU HAVE CURSED YOURSELF!';
+            document.getElementById('cursed-header').style.color = 'red';
+        }
+
+        function superCurse() {
+            document.getElementById('cursed-box').style.display = 'block';
+            document.getElementById('cursed-header').style.fontSize = '300px';
+            document.getElementById('cursed-header').style.fontWeight = 'bold';
+        }
     </script>
 </head>
 
@@ -62,11 +73,11 @@
         <img class="grid-item mainimg" src="images/cute-christmas-image.png" alt="Don't click the buttons, or else you'll cursify this image!" id="changed-image">
         <!--Have the cursify button add a random font and color to the header text-->
         <!--Have the cursify button also change the cute image to a sus image-->
-        <button class="grid-item losfeliz-big" onclick="imageRNG(); colorRNG()">Cursify!</button>
+        <button class="grid-item losfeliz-big" onclick="regularCurse();">Cursify!</button>
         <!--Will change the image to one of 4 random cursed images-->
-        <button class="grid-item losfeliz-big" onclick="document.getElementById('cursed-header').innerHTML='YOU HAVE CURSED YOURSELF!';document.getElementById('cursed-header').style.color='red';">Random!</button>
+        <button class="grid-item losfeliz-big" onclick="imageRNG(); colorRNG()">Random!</button>
         <!--Have the super curse button change the text to 1 of 4 things-->
-        <button class="grid-item losfeliz-big" onclick="document.getElementById('cursed-box').style.display='block'; document.getElementById('cursed-header').style.fontSize='300px';document.getElementById('cursed-header').style.fontWeight='bold';">Super Curse!</button>
+        <button class="grid-item losfeliz-big" onclick="superCurse();">Super Curse!</button>
         <!-- make sure to add a button, where onclick it changes the text size
             one button to change text color
             one button to change text itself-->
