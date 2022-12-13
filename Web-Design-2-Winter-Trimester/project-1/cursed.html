@@ -54,6 +54,38 @@
             document.getElementById('cursed-header').style.fontWeight = 'bold';
         }
     </script>
+    <style>
+        #board {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        #board td,
+        #board th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        #board tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        #board tr:nth-child(odd) {
+            background-color: white;
+        }
+        
+        #board tr:hover {
+            background-color: #ddd;
+        }
+        
+        #board th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -71,17 +103,62 @@
         </ul>
         <h1 class="h1 losfeliz grid-item" id="cursed-header">Be warned, this website is cursed! Leave while you still can!</h1>
         <img class="grid-item mainimg" src="images/cute-christmas-image.png" alt="Don't click the buttons, or else you'll cursify this image!" id="changed-image">
-        <!--Have the cursify button add a random font and color to the header text-->
-        <!--Have the cursify button also change the cute image to a sus image-->
         <button class="grid-item losfeliz-big" onclick="regularCurse();">Cursify!</button>
-        <!--Will change the image to one of 4 random cursed images-->
         <button class="grid-item losfeliz-big" onclick="imageRNG(); colorRNG()">Random!</button>
-        <!--Have the super curse button change the text to 1 of 4 things-->
         <button class="grid-item losfeliz-big" onclick="superCurse();">Super Curse!</button>
-        <!-- make sure to add a button, where onclick it changes the text size
-            one button to change text color
-            one button to change text itself-->
-        <div id="cursed-box" class="susbox"></div>
+        <div class="grid-item table">
+            <table id="board">
+                <tr>
+                    <th colspan="2">Cursed People Table</th>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <th>Curse related to them</th>
+                </tr>
+                <tr>
+                    <td>King Tut</td>
+                    <td>Disturbance to him = disaster</td>
+                </tr>
+                <tr>
+                    <td>Macbeth</td>
+                    <td>Harms all productions of the play about him</td>
+                </tr>
+                <tr>
+                    <td>Chicago Cubs</td>
+                    <td>Will not win a world series</td>
+                </tr>
+                <tr>
+                    <td>La Llorana</td>
+                    <td>Haunting in the river</td>
+                </tr>
+                <tr>
+                    <td>Cain</td>
+                    <td>All land he tried to sow would fallow</td>
+                </tr>
+                <tr>
+                    <td>Prometheus</td>
+                    <td>Eagles eats out his liver every night</td>
+                </tr>
+                <tr>
+                    <td>Sisphyus</td>
+                    <td>Must roll boulder uphill forever</td>
+                </tr>
+                <tr>
+                    <td>Ixion</td>
+                    <td>Bound to burning wheel for eternity</td>
+                </tr>
+                <tr>
+                    <td>Steven He</td>
+                    <td>Permanent Failure</td>
+                </tr>
+                <tr>
+                    <td>Jai Sharma</td>
+                    <td>Addicted to Tesla</td>
+                </tr>
+
+            </table>
+        </div>
+        <div id="cursed-box " class="susbox "></div>
     </div>
 </body>
 

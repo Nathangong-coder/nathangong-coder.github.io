@@ -155,6 +155,11 @@ ul.nav li a:hover {
     margin: auto;
 }
 
+.table {
+    grid-column: 2;
+    grid-row: 5;
+}
+
 .mainvid {
     grid-column: 1/ span 3;
     grid-row: 5;
