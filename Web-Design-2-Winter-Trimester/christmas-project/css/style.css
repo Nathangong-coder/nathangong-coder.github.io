@@ -1,0 +1,16 @@
+body {
+    font-family: 'Comfortaa', sans-serif;
+    display: flex;
+    background-image: url("../images/christmas-background-2.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.text {
+    color: white;
+}
+
+.header {
+    margin: 100px 150px;
+    font-weight: bolder;
+}
