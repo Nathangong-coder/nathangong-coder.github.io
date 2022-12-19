@@ -1,16 +1,78 @@
-body {
-    font-family: 'Comfortaa', sans-serif;
-    display: flex;
-    background-image: url("../images/christmas-background-2.jpg");
-    background-size: cover;
-    height: 100vh;
-}
-
-.text {
-    color: white;
-}
-
-.header {
-    margin: 100px 150px;
-    font-weight: bolder;
-}
+        body {
+            font-family: 'Comfortaa', sans-serif;
+            display: flex;
+            background-image: url("../images/christmas-background-2.jpg");
+            background-size: cover;
+            height: 100vh;
+        }
+        
+        .text {
+            color: white;
+        }
+        
+        .header {
+            font-family: Arial;
+            font-weight: bolder;
+            font-size: 60px;
+            word-wrap: break-word;
+            padding: 10px;
+        }
+        
+        .subheader {
+            font-family: Arial;
+            font-weight: bolder;
+            font-size: 40px;
+            word-wrap: break-word;
+            padding: 10px;
+        }
+        
+        .subtext {
+            font-family: 'Comfortaa';
+            font-size: 20px;
+            word-wrap: break-word;
+            padding: 10px;
+        }
+        
+        .line {
+            height: 50px;
+            width: 4000px;
+            zoom: 0.1;
+            margin: 10px;
+            opacity: 85%;
+        }
+        
+        .vertical-line {
+            rotate: 90deg;
+            height: 10px;
+            width: 1000px;
+            zoom: 0.1;
+            margin: 10px 10px;
+        }
+        
+        .facebook-icon {
+            background: url("images/facebook-logo.png");
+            height: 20px;
+            width: 20px;
+            display: block;
+        }
+        
+        .container {
+            display: grid;
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        
+        .icons {
+            grid-column: 1;
+        }
+        
+        .content {
+            width: 500px;
+            height: 100vh;
+            grid-column: 2/ span 2;
+        }
+        
+        .blank {
+            grid-column: 3/ span 12;
+            width: 700px;
+        }
