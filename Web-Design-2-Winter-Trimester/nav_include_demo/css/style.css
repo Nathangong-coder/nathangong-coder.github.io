@@ -6,3 +6,29 @@ img {
     margin-right: 20px;
     padding: 10px;
 }
+
+.nav {
+    list-style-type: none;
+    background-color: #5B84B1FF;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    grid-column: 1/ span 3;
+    grid-row: 1;
+}
+
+ul.nav li {
+    float: left;
+}
+
+ul.nav li a {
+    display: block;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+ul.nav li a:hover {
+    background-color: rgb(216, 98, 87);
+    color: black;
+}
