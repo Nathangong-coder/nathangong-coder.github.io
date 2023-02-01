@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    height: 120px;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: -50px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.nav-inner {
+    float: left;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    float: left;
+    width: 30%;
+    padding: 40px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.logo p {
+    margin: 0;
+}
+
+img {
+    height: 70px;
+    width: auto;
+}
+
+nav {
+    float: left;
+    width: 70%;
+    text-align: right;
+    padding: 60px;
+}
+
+nav a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.left {
+    float: left;
+    width: 20%;
+}
+
+.nav-left a {
+    background-color: darkgray;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-left a:hover {
+    background-color: gray;
+}
+
+.main {
+    float: left;
+    width: 60%;
+    padding: 0px 20px;
+}
+
+.right {
+    float: left;
+    width: 20%;
+    background-color: grey;
+    color: white;
+    padding: 0px 15px;
+    margin: 10px 0px;
+}
+
+.footer {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    clear: both;
+}
+
+footer {
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media (min-width:621px) and (max-width:1000px) {
+    .main {
+        width: 80%;
+    }
+    .right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:620px) {
+    .left,
+    .main,
+    .right {
+        width: 100%;
+    }
+}
