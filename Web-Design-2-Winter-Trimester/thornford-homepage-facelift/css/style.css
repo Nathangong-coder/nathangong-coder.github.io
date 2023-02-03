@@ -40,6 +40,28 @@ li {
     padding: 15px;
 }
 
+.left {
+    width: 20%;
+    float: left;
+    margin: 10px 0px;
+}
+
+.main {
+    width: 60%;
+    float: left;
+    margin: 10px 0px;
+}
+
+.right {
+    width: 20%;
+    float: left;
+    margin: 10px 0px;
+}
+
+.img {
+    width: 100%;
+}
+
 footer {
     width: 60%;
     margin: 0 auto;
