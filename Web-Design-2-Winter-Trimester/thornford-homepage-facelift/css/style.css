@@ -8,6 +8,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/*Parts of this, including the padding, was from https://alvarotrigo.com/blog/hamburger-menu-css/'s demo*/
+
 .nav {
     overflow: hidden;
     list-style-type: none;
@@ -26,12 +29,12 @@ body {
     color: white;
 }
 
-li {
-    float: left;
-}
-
 .nav a:hover {
     font-weight: bolder;
+}
+
+li {
+    float: left;
 }
 
 .icons img {
@@ -96,6 +99,12 @@ footer {
     margin: auto auto;
 }
 
+.footer {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
 @media (min-width:621px) and (max-width:1000px) {
     .left,
     .main,
@@ -104,6 +113,12 @@ footer {
     }
     .img {
         width: 50%
+    }
+    .main iframe {
+        margin: 0px;
+    }
+    .main h2 {
+        margin: 0px;
     }
 }
 
@@ -116,7 +131,16 @@ footer {
     .img {
         width: 50%
     }
+    .main iframe {
+        margin: 0px;
+    }
+    .main h2 {
+        margin: 0px;
+    }
 }
+
+
+/*The code below is code that I got from https://alvarotrigo.com/blog/hamburger-menu-css/, it was responsive direction 1 */
 
 .menu {
     display: flex;
