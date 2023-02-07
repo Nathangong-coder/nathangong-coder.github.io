@@ -4,6 +4,17 @@ body {
     color: #DFEE06;
 }
 
+.main {
+    width: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-family: "aileron", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
 
 /*Parts of this, including the padding, was from https://alvarotrigo.com/blog/hamburger-menu-css/'s demo*/
 
