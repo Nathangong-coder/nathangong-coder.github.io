@@ -4,15 +4,13 @@ body {
     color: #DFEE06;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .main {
     width: 50px;
     text-align: center;
-}
-
-h2 {
-    font-family: "aileron", sans-serif;
-    font-style: normal;
-    font-weight: 400;
 }
 
 
@@ -26,6 +24,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav a {
@@ -149,4 +148,50 @@ h2 {
 
 .menu>li:not(:last-child) {
     border-bottom: 1px solid #444;
+}
+
+
+/*Below is all my own code*/
+
+h1 {
+    font-family: "aileron", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: "aileron", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.header {
+    text-align: center;
+}
+
+.line {
+    height: 3px;
+    background-color: #DFEE06;
+    width: 500px;
+    margin: auto;
+}
+
+.big-body {
+    text-align: center;
+    height: 150px;
+}
+
+.main-button {
+    margin: auto;
+}
+
+.footer {
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #8c9418;
+    color: #282828;
+    text-align: center;
+    height: 25px;
 }
