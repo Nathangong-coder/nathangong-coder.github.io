@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gong | Link Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header" id="top">
+            <h1>Hello! Welcome to my link demo!</h1>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer sponsored">Youtube</a>
+        </div>
+        <div class="main">
+            <br>
+            <br>
+            <h2>Before we start, every link has some basic things it requires. It requries the "a" tag and something inside the tag for the link to show up.</h2>
+            <h4>That should look like this:</h4>
+            <pre>
+                <code>
+                    &lt;a&gt;Cool Link&lt;/a&gt;
+                </code>
+            </pre>
+            <h3>First, we'll talk about the basic link, linking to another page</h3>
+            <h4>All you need for that is the "a" tag and a website href (as shown below):</h4>
+            <pre>
+                <code>
+                    &lt;a href="https://css-tricks.com" CSS-Tricks&gt; &lt;/a&gt;
+                </code>
+            </pre>
+            <h3>Secondly, a link can to another page, like for a navbar</h3>
+            <h4>All you need for that is the "a" tag and that page's href:</h4>
+            <pre>
+                <code>
+                    &lt;a href="index.html"&gt; Home &lt;/a&gt;</code>
+            </pre>
+            <h3>You can also make a jump link, for when you want to link to part of your webpage</h3>
+            <h4>All you need for that is the "a" tag and that element's id href: </h4>
+            <pre>
+                <code>
+                    &lt;h1 id="#top"&gt; Hello! Welcome to my demo! &lt;/h1&gt;
+
+                    ....
+
+                    &lt;a href="#top"&gt;Back to top&lt;/a&gt;
+                </code>
+            </pre>
+            <h3>You can also make disabled links!</h3>
+            <h4>These look a bit weird, like this:</h4>
+            <a>Weird Disabled Links</a>
+            <h4>These are mainly used if a link may be deactivated until somebody presses/clickes on something, and have no href tag, like this:</h4>
+            <pre>
+                <code>
+                    &lt;a&gt;Weird Disabled Links&lt;/a&gt;
+                </code>
+            </pre>
+            <h3>How about opening links in new tabs?</h3>
+            <h4>This is generally unrecommended, as you will also need rel attributes (shown later). It requires target="_blank" to work, and is done like this: </h4>
+            <pre>
+                <code>
+                    &lt;a href="www.css-tricks.com" target="_blank"&gt; &lt;/a&gt;
+                </code>
+            </pre>
+            <h3>What are some rel attributes, which do I need for target="_blank", and how do I use them?</h3>
+            <h4>There are many, some include:</h4>
+            <ul>
+                <li>rel="alternate" (Alternate version of the document)</li>
+                <li>rel="author" (Author of the document)</li>
+                <li>rel="help" (A resource for help with the document)</li>
+                <li>rel="search" (A document meant to perform a search in the current document)</li>
+                <li>rel="sponsored" (Informs search engine that a marked link/page is sponsored)</li>
+                <li>rel="ugc" (Informs search engine of not-particularly-trusted user-generated content, like comments and forum posts)</li>
+                <li>rel="nofollow" (Informs search engine that linked site is not associated with current site)</li>
+                <li>rel="noopener" (Prevents the page from doing malicious things)</li>
+                <li>rel="noreferrer" (Prevents other sites from identifying how the user got to the clicked on link)</li>
+                <li>rel="me" (Indicates that its destination represents the same person or entity as the current page)</li>
+            </ul>
+            <h4>It is simple to implement, and add a space in between two rels to separate them like this:</h4>
+            <pre>
+                <code>
+                    &lt;a href="www.youtube.com" target="_blank" rel="sponsored noopener noreferrer"&gt;&lt;/a&gt;
+                </code>
+            </pre>
+            <h3>You can also make links downloads to certain things, like this:</h3>
+            <a href="files/rickroll.mp4">Download the video of Mr. Rick</a>
+            <pre>
+                <code>
+                    &lt;a href="files/rickroll.mp4"&gt; Download the video of Mr. Rick &lt;/a&gt;
+                </code>
+            </pre>
+            <h3>You can make images and icons links, like this:</h3>
+            <a href="https://www.youtube.com">😀Youtube time!</a>
+            <pre>
+                <code>
+                    &lt;a href="https://youtube.com"&gt;😀Youtube time!&lt;/a&gt;
+                </code>
+            </pre>
+            <h3>Finally, you can also style links for when they appear, are hovered over, and when you've visited them</h3>
+            <a href="https://css-tricks.com" class="cool-link"></a>
+        </div>
+    </div>
+    <footer class=" footer ">
+        &copy; Nathan Gong | 2023 |
+        <a href="#top">Link to top</a>
+    </footer>
+
+</body>
+
+</html>

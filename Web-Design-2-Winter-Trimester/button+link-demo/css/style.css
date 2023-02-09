@@ -1,0 +1,60 @@
+body {
+    background: gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1,
+h2,
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    background: white;
+    padding: 20px;
+}
+
+pre code {
+    background-color: #eee;
+    border: 1px solid#999;
+    display: block;
+    border-color: blanchedalmond;
+    padding: 20px;
+    color: black;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #999;
+    color: #eee;
+    text-align: center;
+    height: 25px;
+}
+
+.cool-link:hover {}
+
+.cool-link:visited {}
+
+.cool-link:focus {}
+
+.cool-link:link {}
+
+.cool-link:active {
+    color: black;
+    text-decoration: seagreen;
+    font-weight: bolder;
+}
