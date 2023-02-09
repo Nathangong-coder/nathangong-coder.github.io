@@ -13,7 +13,6 @@
     <div class="container">
         <div class="header" id="top">
             <h1>Hello! Welcome to my link demo!</h1>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer sponsored">Youtube</a>
         </div>
         <div class="main">
             <br>
@@ -99,8 +98,43 @@
                     &lt;a href="https://youtube.com"&gt;😀Youtube time!&lt;/a&gt;
                 </code>
             </pre>
-            <h3>Finally, you can also style links for when they appear, are hovered over, and when you've visited them</h3>
-            <a href="https://css-tricks.com" class="cool-link"></a>
+            <h3>Finally, you can also style links for when they appear, are hovered over, when you've visited them, like this:</h3>
+            <a href="https://css-tricks.com" class="cool-link">Very cool link</a>
+            <pre>
+                <code>
+                    &lt;a href="https://css-tricks.com"&gt;Very cool link&lt;/a&gt;
+
+                    .cool-link:hover {
+                        color: white;
+                        text-decoration: none;
+                        font-weight: 100px;
+                    }
+                    
+                    .cool-link:visited {
+                        color: purple;
+                        text-decoration: dotted;
+                        font-weight: bolder;
+                    }
+                    
+                    .cool-link:focus {
+                        color: orange;
+                        text-decoration: double;
+                        font-weight: bold;
+                    }
+                    
+                    .cool-link:link {
+                        color: blue;
+                        text-decoration: dashed;
+                        font-weight: 1000px;
+                    }
+                    
+                    .cool-link:active {
+                        color: black;
+                        text-decoration: seagreen;
+                        font-weight: bolder;
+                    }
+                </code>
+            </pre>
         </div>
     </div>
     <footer class=" footer ">
