@@ -2,6 +2,7 @@
 body {
     background-color: #282828;
     color: #DFEE06;
+    font-family: "open-sans", sans-serif;
 }
 
 * {
@@ -179,6 +180,11 @@ h2 {
 .big-body {
     text-align: center;
     height: 150px;
+}
+
+.caption {
+    height: 5%;
+    width: 10%;
 }
 
 .main-button {
