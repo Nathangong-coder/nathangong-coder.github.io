@@ -50,6 +50,7 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    z-index: 100000000000;
 }
 
 .menu>li {
@@ -132,7 +133,7 @@ body {
 
 #menu-toggle:checked~.menu li {
     border: 1px solid #333;
-    height: 2.5em;
+    height: 3.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -182,13 +183,12 @@ h2 {
     height: 150px;
 }
 
-.caption {
-    height: 5%;
-    width: 10%;
-}
-
 .main-button {
     margin: auto;
+}
+
+.image-logo {
+    height: 20px;
 }
 
 .footer {
@@ -200,4 +200,14 @@ h2 {
     color: #282828;
     text-align: center;
     height: 25px;
+}
+
+.slideshow {
+    z-index: 100;
+}
+
+@media only screen and (max-width:620px) {
+    .caption {
+        display: hidden;
+    }
 }
