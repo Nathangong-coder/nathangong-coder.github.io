@@ -19,14 +19,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
 
     <!--Got this typewriter effect from unpkg.com-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <div class="container">
+    <div class="container aos-item" data-aos="fade-in">
         <div class="nav">
             <div class="image-logo"><img src="images/Logo.png"></div>
             <!--Used this menu toggle HTML code from https://alvarotrigo.com/blog/hamburger-menu-css/-->
@@ -64,7 +68,7 @@
             <div class="line"></div>
             <h2 id="typewriter"></h2>
         </div>
-        <div class="big-body"><br><br><button class="main-button"><a href="files/Resume.docx" download>Download Resume</a></button></div>
+        <div class="big-body"><br><br><button class="main-button"><a href="#" download>Download Resume</a></button></div>
         <!-- Carousel -->
         <div id="demo" class="carousel slide grid-item main-image slideshow" data-bs-ride="carousel">
 
