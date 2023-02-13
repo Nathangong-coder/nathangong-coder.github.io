@@ -183,12 +183,36 @@ h2 {
     height: 150px;
 }
 
-.main-button {
-    margin: auto;
+.main-button:hover {
+    color: #282828;
+    background-color: #DFEE06;
+    font-family: 'Comfortaa', cursive;
+    border-color: #DFEE06;
+    border-radius: 2px;
+    border: solid;
 }
 
-.image-logo {
-    height: 20px;
+.main-button {
+    margin: auto;
+    background-color: #282828;
+    color: #DFEE06;
+    border-color: #DFEE06;
+    border-radius: 2px;
+    border: solid;
+    font-family: 'Comfortaa', cursive;
+}
+
+.main-button a {
+    text-decoration: none;
+    color: #DFEE06;
+}
+
+.main-button a:hover {
+    color: #282828;
+}
+
+.image-logo img {
+    height: 55px;
 }
 
 .footer {
