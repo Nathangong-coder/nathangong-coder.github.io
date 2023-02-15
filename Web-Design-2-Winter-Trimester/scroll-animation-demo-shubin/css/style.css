@@ -76,7 +76,7 @@
 
 @keyframes fade-bottom {
     0% {
-        transform: translateY(50px);
+        transform: translateY(100px);
         opacity: 0;
     }
     100% {
@@ -87,7 +87,7 @@
 
 @keyframes fade-left {
     0% {
-        transform: translateX(-100px);
+        transform: translateX(-1000px);
         opacity: 0;
     }
     100% {
@@ -98,7 +98,7 @@
 
 @keyframes fade-right {
     0% {
-        transform: translateX(100px);
+        transform: translateX(250px);
         opacity: 0;
     }
     100% {
