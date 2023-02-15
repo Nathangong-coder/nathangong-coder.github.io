@@ -24,8 +24,14 @@ body {
     bottom: 0;
     left: 0;
     margin: auto;
-    background-image: url("https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg");
+    background-color: limegreen;
     background-size: cover;
+}
+
+.centered-image {
+    margin: auto;
+    margin-left: 150px;
+    margin-top: 20px;
 }
 
 .split-screen {
@@ -58,9 +64,18 @@ body {
     animation-fill-mode: forwards;
 }
 
-.content p {
+.content h2 {
     margin: 0;
     font-size: 75px;
+}
+
+.content p {
+    margin: 0;
+}
+
+.space {
+    margin: 0;
+    height: 100px;
 }
 
 .content .comma {
@@ -109,7 +124,7 @@ body {
 
 @keyframes changeBackground {
     to {
-        background-image: url("https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg");
+        background-color: limegreen;
         background-size: 200%;
         background-position: center;
         background-clip: text;
