@@ -1,0 +1,50 @@
+.slideshow {
+    z-index: 100;
+}
+
+.header-line {
+    height: 3px;
+    background-color: #DFEE06;
+    width: 500px;
+    margin: auto;
+}
+
+.main-button:hover {
+    color: #282828;
+    background-color: #DFEE06;
+    font-family: 'Comfortaa', cursive;
+    border-color: #DFEE06;
+    border-radius: 2px;
+    border: solid;
+}
+
+.main-button {
+    margin: auto;
+    background-color: #282828;
+    color: #DFEE06;
+    border-color: #DFEE06;
+    border-radius: 2px;
+    border: solid;
+    font-family: 'Comfortaa', cursive;
+}
+
+.main-button a {
+    text-decoration: none;
+    color: #DFEE06;
+}
+
+.main-button a:hover {
+    color: #282828;
+}
+
+@media only screen and (max-width:620px) {
+    .header-line {
+        width: 300px;
+    }
+}
+
+@media (min-width:621px) and (max-width:1000px) {
+    .header-line {
+        width: 350px;
+    }
+}
