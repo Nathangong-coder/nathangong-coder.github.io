@@ -1,0 +1,14 @@
+.contact {
+    font-size: 18px;
+    text-decoration: none;
+    color: #DFEE06;
+    margin: 0;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.col-md-6 div {
+    padding: 20px;
+}
