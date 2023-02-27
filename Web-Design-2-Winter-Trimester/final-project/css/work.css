@@ -174,7 +174,7 @@
 
 @keyframes fade-left {
     0% {
-        transform: translateX(-200px);
+        transform: translateX(-100px);
         opacity: 0;
     }
     100% {
@@ -185,7 +185,7 @@
 
 @keyframes fade-right {
     0% {
-        transform: translateX(200px);
+        transform: translateX(100px);
         opacity: 0;
     }
     100% {
