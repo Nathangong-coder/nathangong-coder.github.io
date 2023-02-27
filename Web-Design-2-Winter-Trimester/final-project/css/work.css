@@ -150,7 +150,52 @@
 }
 
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
+/*Below is my own code*/
+
+
+/*Revealing elements when scrolling down*/
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/*Responsive timeline on screens less than 600px wide */
 
 @media screen and (max-width: 600px) {
     /* Place the timelime to the left */
@@ -178,5 +223,9 @@
     /* Make all right containers behave like the left ones */
     .timeline-right {
         left: 0%;
+    }
+    /*Making sure that all containers in the timeline fade left*/
+    .active.fade-right {
+        animation: fade-left 1s ease-in;
     }
 }
