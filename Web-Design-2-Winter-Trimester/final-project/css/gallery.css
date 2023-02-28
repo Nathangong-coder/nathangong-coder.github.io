@@ -1,0 +1,44 @@
+.short-left {
+    padding: 5px;
+    width: 20%;
+    float: left;
+}
+
+.middle-left {
+    padding: 5px;
+    width: 20%;
+    float: left;
+}
+
+.middle {
+    padding: 5px;
+    width: 20%;
+    float: left;
+}
+
+.middle-right {
+    padding: 5px;
+    width: 20%;
+    float: left;
+}
+
+.short-right {
+    padding: 5px;
+    width: 20%;
+    float: left;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+@media screen and (max-width:600px) {}
+
+@media (min-width:621px) and (max-width:1000px) {
+    .main {
+        width: 80%;
+    }
+    .right {
+        width: 100%;
+    }
+}
