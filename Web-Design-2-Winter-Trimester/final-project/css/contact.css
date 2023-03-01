@@ -1,7 +1,7 @@
 .contact {
     font-size: 18px;
     text-decoration: none;
-    color: #DFEE06;
+    color: #b5c01c;
     margin: 0;
 }
 
@@ -11,4 +11,8 @@ a:hover {
 
 .col-md-6 div {
     padding: 20px;
+}
+
+.title {
+    color: #DFEE06;
 }

@@ -191,6 +191,11 @@ h2 {
     text-align: center;
 }
 
+.non-text-centered {
+    margin: auto;
+    display: block;
+}
+
 .long-line {
     width: 100%;
     height: 2px;
@@ -221,7 +226,7 @@ h2 {
         width: 100%;
     }
     .right {
-        width: 100%;
+        display: none;
     }
 }
 
@@ -236,6 +241,6 @@ h2 {
         width: 60%;
     }
     .right {
-        width: 60%;
+        width: 40%;
     }
 }

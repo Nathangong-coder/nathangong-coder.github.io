@@ -5,6 +5,10 @@
     margin-right: 5px;
 }
 
+.ribbon {
+    height: 450px;
+}
+
 .left-leaning {
     margin-left: 10px;
 }
@@ -17,11 +21,6 @@
 .timeline-header {
     width: 100%;
     float: left;
-}
-
-.content-image {
-    width: 100%;
-    margin-top: 20px;
 }
 
 
