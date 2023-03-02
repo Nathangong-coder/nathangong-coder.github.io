@@ -183,6 +183,11 @@ h2 {
     float: left;
 }
 
+.main-block {
+    width: 100%;
+    float: left;
+}
+
 .image-right {
     width: 50%;
     float: left;
@@ -236,6 +241,9 @@ h2 {
     .image-right {
         display: none;
     }
+    .main-block {
+        width: 100%;
+    }
 }
 
 @media (min-width:621px) and (max-width:1000px) {
@@ -253,5 +261,8 @@ h2 {
     }
     .image-right {
         width: 40%;
+    }
+    .main-block {
+        width: 100%
     }
 }
