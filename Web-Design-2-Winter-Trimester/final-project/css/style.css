@@ -183,6 +183,11 @@ h2 {
     float: left;
 }
 
+.image-right {
+    width: 50%;
+    float: left;
+}
+
 .image-logo img {
     height: 55px;
 }
@@ -226,6 +231,9 @@ h2 {
         width: 100%;
     }
     .right {
+        width: 100%;
+    }
+    .image-right {
         display: none;
     }
 }
@@ -241,6 +249,9 @@ h2 {
         width: 60%;
     }
     .right {
+        width: 60%;
+    }
+    .image-right {
         width: 40%;
     }
 }
