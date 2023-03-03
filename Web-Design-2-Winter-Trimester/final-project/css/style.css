@@ -215,14 +215,62 @@ h2 {
 
 .footer {
     margin-top: 10px;
-    left: 0;
-    bottom: 0;
+    display: flex;
+    height: 50px;
     width: 100%;
-    background-color: #8c9418;
-    color: #282828;
-    text-align: center;
-    height: 25px;
-    float: left;
+    background-color: #3b3b3b;
+    font-family: 'Comfortaa';
+}
+
+
+/*Parts of this was used from this codepen demo: https://codepen.io/julesforrest/pen/qLpgNB */
+
+.footer ul {
+    overflow: hidden;
+    list-style-type: none;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.footer ul li {
+    margin: 0px;
+}
+
+@media (min-width: 500px) {
+    ul {
+        grid-auto-flow: column;
+    }
+}
+
+.footer-ul li a {
+    color: #b5c01c;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 #b5c01c;
+}
+
+.footer-ul a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+}
+
+li:hover~li p {
+    animation: wave-animation 0.3s infinite;
+}
+
+@keyframes wave-animation {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
 }
 
 @media only screen and (max-width:620px) {
