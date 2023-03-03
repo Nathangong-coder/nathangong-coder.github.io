@@ -20,3 +20,9 @@ a:hover {
 .form-image {
     height: 475px;
 }
+
+@media only screen and (max-width:620px) {
+    .left {
+        margin-bottom: 10px;
+    }
+}

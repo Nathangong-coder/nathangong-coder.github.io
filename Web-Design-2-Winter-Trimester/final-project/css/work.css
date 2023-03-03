@@ -228,3 +228,9 @@
         animation: fade-left 1s ease-in;
     }
 }
+
+@media only screen and (max-width:620px) {
+    .left {
+        margin-bottom: 10px;
+    }
+}
