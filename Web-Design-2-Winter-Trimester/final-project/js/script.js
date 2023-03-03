@@ -16,26 +16,10 @@ window.addEventListener("scroll", reveal);
 
 function about() {
     var about = document.getElementbyId("about");
-    about.open();
-}
+    about.width = 900;
+    about.height = 600;
+    ctx.drawImage(about, 0, 0, about.width, about.height);
 
-function open() {
-    img.addEventListener('load'), () => {
-        // Initialize the canvas and it's size
-        const canvas = document.createElement("canvas");
-        const ctx = canvas.getContext("2d");
-
-        // Set width and height
-        canvas.width = 200;
-        canvas.height = 150;
-
-        // Draw image and export to a data-uri
-        ctx.drawImage(imgEl, 0, 0, canvas.width, canvas.height);
-        const dataURI = canvas.toDataURL();
-
-        // Do something with the result, like overwrite original
-        img.src = dataURI;
-    }
 }
 // To check the scroll position on page load
 reveal();
