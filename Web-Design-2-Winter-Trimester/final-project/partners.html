@@ -54,59 +54,68 @@
             <h1>Image Gallery:</h1>
         </div>
         <div class="gallery">
-            <div class="short-left" onclick="about()">
-                <div class="image-description" id="about">
+            <div class="short-left">
+                <div class="image-description" onclick="about()">
                     <p>One of my 1st times playing bridge</p>
                 </div>
-                <img src="images/Bridge1.jpg" alt=" ">
+                <img src="images/Bridge1.jpg" alt=" " id="about">
             </div>
 
-            <div class="middle-left " onclick="about() "><img src="images/Bridge2.jpg " alt=" ">
+            <div class="middle-left" onclick="about()">
                 <div class="image-description">
                     <p>My brother & I at the Providence Summer Nationals in 2022</p>
-                </div>
+                </div><img src="images/Bridge2.jpg " alt=" ">
             </div>
-            <div class="middle " onclick="about() "><img src="images/Bridge3.jpg " alt=" ">
+            <div class="middle" onclick="about() ">
+                <div class="image-description">
+                    <p>Me playing in the Nationals</p>
+                </div><img src="images/Bridge3.jpg " alt=" ">
+            </div>
+            <div class="middle-right" onclick="about()">
+                <div class="image-description">
+                    <p>Another photo of me playing in the Nationals</p>
+                </div><img src="images/Bridge4.jpg " alt=" ">
+            </div>
+            <div class="short-right" onclick="about()">
+                <div class="image-description">
+                    <p>Me taking photos of rocks</p>
+                </div><img src="images/Photography1.JPG " alt=" ">
+            </div>
+            <div style="clear:both;"></div>
+            <div class="short-left" onclick="about()">
                 <div class="image-description ">
-                    <p></p>
-                </div>
+                    <p>Me taking photos of a landscape</p>
+                </div><img src="images/Photography2.JPG " alt=" ">
             </div>
-            <div class="middle-right " onclick="about() "><img src="images/Bridge4.jpg " alt=" ">
+            <div class="middle-left" onclick="about() ">
                 <div class="image-description ">
-                    <p></p>
-                </div>
+                    <p>Me taking photos of waves</p>
+                </div><img src="images/Photography3.JPG " alt=" ">
+
             </div>
-            <div class="short-right " onclick="about() "><img src="images/Photography1.JPG " alt=" ">
+            <div class="middle" onclick="about() ">
                 <div class="image-description ">
-                    <p></p>
-                </div>
+                    <p>Me taking photos of</p>
+                </div><img src="images/Photography4.JPG " alt=" ">
+
             </div>
-            <div class="short-left " style="height:5px; " onclick="about() ">
-                <img src="images/Photography2.JPG " alt=" ">
+            <div class="middle-right" onclick="about(); ">
                 <div class="image-description ">
-                    <p></p>
-                </div>
+                    <p>Amogus</p>
+                </div><img src="images/Tennis1.jpg " alt=" ">
+
             </div>
-            <div class="middle-left " onclick="about() "><img src="images/Photography3.JPG " alt=" ">
+            <div class="short-right" onclick="about(); ">
                 <div class="image-description ">
-                    <p></p>
-                </div>
+                    <p>Me taking photos of the waves</p>
+                </div><img src="images/biking1.jpg" alt=" ">
             </div>
-            <div class="middle " onclick="about() "><img src="images/Photography4.JPG " alt=" ">
-                <div class="image-description ">
-                    <p></p>
-                </div>
-            </div>
-            <div class="middle-right " onclick="about();"><img src="images/Tennis1.jpg " alt=" ">
-                <div class="image-description ">
-                    <p></p>
-                </div>
-            </div>
-            <div class="short-right " onclick="about();"><img src="images/Photography1.JPG " alt=" ">
-                <div class="image-description ">
-                    <p></p>
-                </div>
-            </div>
+            <div style="clear:both;"></div>
+            <div class="short-left"></div>
+            <div class="middle-left"></div>
+            <div class="middle"></div>
+            <div class="middle-right"></div>
+            <div class="short-right"></div>
         </div>
         <script>
             function about() {
@@ -116,20 +125,20 @@
                         let imageFile = e.target.files[0];
                         var reader = new FileReader();
                         reader.onload = function(e) {
-                            var img = document.createElement("img");
+                            var img = document.createElement("img ");
                             img.onload = function(event) {
                                 // Dynamically create a canvas element
-                                var canvas = document.createElement("canvas");
+                                var canvas = document.createElement("canvas ");
 
-                                // var canvas = document.getElementById("canvas");
-                                var ctx = canvas.getContext("2d");
+                                // var canvas = document.getElementById("canvas ");
+                                var ctx = canvas.getContext("2d ");
 
                                 // Actual resizing
                                 ctx.drawImage(img, 0, 0, 800, 800);
 
                                 // Show resized image in preview element
                                 var dataurl = canvas.toDataURL(imageFile.type);
-                                document.getElementById("preview").src = dataurl;
+                                document.getElementById("preview ").src = dataurl;
                             }
                             img.src = e.target.result;
                         }
@@ -139,13 +148,13 @@
             }
         </script>
     </div>
-    <div class="footer">
-        <ul class="footer-ul">
-            <li><a href="mailto:ngong7053@gmail.com">Gmail</a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=100090906783433">Facebook</a></li>
-            <li><a href="mailto:ngong@eastsideprep.com">Email</a></li>
-            <li><a href="https://instagram.com/nathan_gong_pictures">Instagram</a></li>
-            <li><a href="https://github.com/Nathangong-coder">Github</a></li>
+    <div class="footer ">
+        <ul class="footer-ul ">
+            <li><a href="mailto:ngong7053@gmail.com ">Gmail</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100090906783433 ">Facebook</a></li>
+            <li><a href="mailto:ngong@eastsideprep.com ">Email</a></li>
+            <li><a href="https://instagram.com/nathan_gong_pictures ">Instagram</a></li>
+            <li><a href="https://github.com/Nathangong-coder ">Github</a></li>
             <li>
                 <p>👋</p>
             </li>
