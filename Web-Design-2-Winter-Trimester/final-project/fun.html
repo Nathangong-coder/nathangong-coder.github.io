@@ -52,10 +52,153 @@
         </div>
         <div class="centered">
             <h1>Fun!</h1>
+            <h2>A page dedicated to video games and fun!</h2>
         </div>
-        <div class="left">
-            <script src=" https://cdn.htmlgames.com/embed.js?game=President&amp;bgcolor=white " style="width:300px;"></script>
+        <div class="left"><iframe style="margin-bottom:20px; display:block;" class="iframe" id="ZMgameFrame" src="https://cdn.htmlgames.com/President/index.html?bgcolor=white" allowfullscreen="" width="625px" height="375px" frameborder="0"></iframe>
         </div>
+        <div class="right">
+            <iframe class="iframe" style="margin-bottom:20px; display:block;" src="https://cdn.htmlgames.com/AnimalTetris/index.html?bgcolor=white" allowfullscreen="" width="625px" height="375px" frameborder="0"></iframe>
+        </div>
+        <div class="long-line"></div>
+        <br><br>
+        <h2 class="centered">Now, let's have some fun by learning about bridge!</h2>
+        <br><br>
+        <h3>We will start with the basics. There are 52 cards used in the game of bridge (jokers aren't part of bridge), with the A being the biggest card. There are 4 suits, each with 13 cards: spades, hearts, diamonds and clubs. Bridge is a two-player game,
+            with a key part of the game having communication between you and your partner.</h3><br>
+        <p>Q: What are the different suits? How many cards are in each suit?</p>
+        <form>
+            <input onclick="document.getElementById('answer1').innerHTML='I am sorry, but that is incorrect.'" type="radio" id="52/14" name="question1_answer" value="52/14">
+            <label for="52/14">52 suits and 14 cards in each suit</label><br>
+            <input onclick="document.getElementById('answer1').innerHTML='I am sorry, but that is incorrect.'" type="radio" id="4/14" name="question1_answer" value="4/14">
+            <label for="4/14">4 suits and 14 cards in each suit</label><br>
+            <input onclick="document.getElementById('answer1').innerHTML='Congratulations, that is correct!'" type="radio" id="4/13" name="question1_answer" value="4/13">
+            <label for="4/13">4 suits and 13 cards in each suit</label><br>
+            <input onclick="document.getElementById('answer1').innerHTML='I am sorry, but that is incorrect.'" type="radio" id="52/13" name="question1_answer" value="52/13">
+            <label for="52/13">52 suits and 13 cards in each suit</label><br><br>
+        </form>
+        <button class="check" onclick="document.getElementById('answer1').style.opacity='100%';Q1Function()">Check your answer</button>
+        <button class="undo" onclick="document.getElementById('answer1').style.opacity='0%';Q1Function_undo()">Retry your first question answer</button>
+        <p id="answer1" style="opacity:0%"></p>
+        <script>
+            function Q1Function() {
+                document.getElementById('52/14').disabled = true;
+                document.getElementById('4/14').disabled = true;
+                document.getElementById('4/13').disabled = true;
+                document.getElementById('52/13').disabled = true;
+            }
+
+            function Q1Function_undo() {
+                document.getElementById('52/14').disabled = false;
+                document.getElementById('4/14').disabled = false;
+                document.getElementById('4/13').disabled = false;
+                document.getElementById('52/13').disabled = false;
+            }
+        </script>
+        <h3 class="losfeliz-big grid-item">We first need to know what phases of bridge there are. There are 2 phases to bridge, the 1st is a bidding auction, where highest number & suit wins (up to 7NT). The 2nd is a playing aspect of the game, where you try to take as many tricks as you
+            can (a trick is won when everyone plays a card, and with you playing highest card in a suit [spade, heart, diamond, or club], or with the highest ruff [we'll talk about that later])</h3>
+        <p class="citadelbold">Q: What are the different phases of bridge?</p>
+        <form disabled="false">
+            <input onclick="document.getElementById('answer2').innerHTML='Congratulations, that is correct!'" type="radio" id="2/bidding&playing" name="question2_answer" value="2/bidding&playing">
+            <label for="2/bidding&playing">There are 2 phases, the bidding phase and the playing phase</label><br>
+            <input onclick="document.getElementById('answer2').innerHTML='I am sorry, but that is incorrect.'" type="radio" id="2/bidding&trick" name="question2_answer" value="2/bidding&trick">
+            <label for="2/bidding&trick">There are 2 phases, the bidding phase and the tricking phase</label><br>
+            <input onclick="document.getElementById('answer2').innerHTML='I am sorry, but that is incorrect.';incorrect()" type="radio" id="1/bidding" name="question2_answer" value="1/bidding">
+            <label for="1/bidding">There is 1 phase, the bidding phase.</label><br>
+            <input onclick="document.getElementById('answer2').innerHTML='I am sorry, but that is incorrect.'" type="radio" id="1/playing" name="question2_answer" value="1/playing">
+            <label for="1/playing">There is 1 phase, the playing phase. </label><br><br>
+        </form>
+        <button class="check" onclick="document.getElementById('answer2').style.opacity='100%';Q2Function()">Check your 2nd question answer</button>
+        <button class="undo" onclick="document.getElementById('answer2').style.opacity='0%';Q2Function_undo()">Retry your question 2 answer</button>
+        <p id="answer2" style="opacity:0%;"><br></p>
+        <script>
+            function incorrect() {
+                onclick = ".innerHTML='incorrect'"
+            }
+
+            function Q2Function() {
+                onclick
+                document.getElementById('2/bidding&playing').disabled = true;
+                document.getElementById('2/bidding&trick').disabled = true;
+                document.getElementById('1/bidding').disabled = true;
+                document.getElementById('1/playing').disabled = true;
+            }
+
+            function Q2Function_undo() {
+                document.getElementById('2/bidding&playing').disabled = false;
+                document.getElementById('2/bidding&trick').disabled = false;
+                document.getElementById('1/bidding').disabled = false;
+                document.getElementById('1/playing').disabled = false;
+            }
+        </script>
+        <h3 class="losfeliz-big grid-item">In the bidding phase, you fight for the highest contract in an auction. There are 7 levels, the lowest level being the 1 level, and the highest being the 7 level. When you bid, you are communicating with your partner about what you have, and you
+            want to find some place where you and your partner can get the tricks that you promised (the 1st level promises getting 7 tricks, 2nd level promises getting 8, with the last level, the 7th level promises getting all the tricks. </h3>
+        <p class="citadelbold">Q: How many tricks do you promise to get if you bid at the 6 level?</p>
+        <form>
+            <input onclick="document.getElementById('answer3').innerHTML='Congratulations, that is correct!'" type="radio" id="12" name="question3_answer" value="12">
+            <label for="12">You promise to get 12 tricks.</label><br>
+            <input onclick="document.getElementById('answer3').innerHTML='I am sorry, but that is incorrect.'" type="radio" id="13" name="question3_answer" value="13">
+            <label for="13">You promise to get 13 tricks.</label><br>
+            <input onclick="document.getElementById('answer3').innerHTML='I am sorry, but that is incorrect.'" type="radio" id="11" name="question3_answer" value="11">
+            <label for="11">You promise to get 11 tricks.</label><br>
+            <input onclick="document.getElementById('answer3').innerHTML='I am sorry, but that is incorrect.'" type="radio" id="10" name="question3_answer" value="10">
+            <label for="10">You promise to get 10 tricks</label><br><br>
+        </form>
+        <button class="check" onclick="document.getElementById('answer3').style.opacity='100%';Q3Function()">Check your 3rd question answer</button>
+        <button class="undo" onclick="document.getElementById('answer3').style.opacity='0%';Q3Function_undo()">Retry your 3rd question answer</button>
+        <p id="answer3" style="opacity: 0%; "><br></p>
+        <script>
+            function Q3Function() {
+                document.getElementById('12').disabled = true;
+                document.getElementById('13').disabled = true;
+                document.getElementById('11').disabled = true;
+                document.getElementById('10').disabled = true;
+            }
+
+            function Q3Function_undo() {
+                document.getElementById('12').disabled = false;
+                document.getElementById('13').disabled = false;
+                document.getElementById('11').disabled = false;
+                document.getElementById('10').disabled = false;
+            }
+        </script>
+        <h3 class="losfeliz-big grid-item ">There is also a hierachy of suits in the bidding, with the clubs being the lowest, then diamonds, then hearts, then spades, and finally NT. The highest contract is 7NT. When anybody bids before you, you need to bid something higher than what they
+            bid in ranking. For example, the opponent or partner before bid 1NT, you can only bid anything 2 clubs or higher.
+        </h3>
+        <h3 class="losfeliz-big grid-item ">
+            In an auction, if you don't think you can promise anything higher, you can also pass. There is also a double/redouble bid, but that is when you don't think your opponents can follow through on their promise and you want to punish them (the redouble bid
+            is when you think you can follow through on you/your partner's promise). The pictures below shows the ranking of the suits and an example bidding auction.</h3>
+
+        <div class="left"><img src="image/Bidding box.gif "></div>
+        <div class="right"><img src="image/Example auction.PNG "></div><br>
+        <p class="citadelbold ">Q: What is the hierachy of the suits?</p>
+        <form>
+            <input onclick="document.getElementById('answer4').innerHTML='Congratulations, that is correct!'" type="radio" id="C/D/H/S/NT" name="question4_answer" value="C/D/H/S/NT">
+            <label for="C/D/H/S/NT ">Clubs, Diamonds, Hearts, Spades, No-Trump</label><br>
+            <input onclick="document.getElementById('answer4').innerHTML='I am sorry, but that is incorrect.'" type="radio" id="H/D/S/C/NT" name="question4_answer" value="H/D/S/C/NT">
+            <label for="H/D/S/C/NT ">Hearts, Diamonds, Spades, Clubs, No-Trump</label><br>
+            <input onclick="document.getElementById('answer4').innerHTML='I am sorry, but that is incorrect.'" type="radio" id="NT/D/H/S/C" name="question4_answer" value="NT/D/H/S/C">
+            <label for="NT/D/H/S/C ">No-Trump, Diamonds, Hearts, Spades, Clubs</label><br>
+            <input onclick="document.getElementById('answer4').innerHTML='I am sorry, but that is incorrect.'" type="radio" id="S/D/H/NT/C" name="question4_answer" value="S/D/H/NT/C">
+            <label for="S/D/H/NT/C ">Spades, Diamonds, Hearts, No-Trump, Clubs</label><br><br>
+        </form>
+        <button class="check" onclick="document.getElementById('answer4').style.opacity='100%';Q4Function()">Check your 4th question answer</button>
+        <button class="undo" onclick="document.getElementById('answer4').style.opacity='0%';Q4Function_undo()">Retry your 4th question answer</button>
+        <p id="answer4" style="opacity: 0%;"><br></p>
+        <script>
+            function Q4Function() {
+                document.getElementById('C/D/H/S/NT').disabled = true;
+                document.getElementById('H/D/S/C/NT').disabled = true;
+                document.getElementById('NT/D/H/S/C').disabled = true;
+                document.getElementById('S/D/H/NT/C').disabled = true;
+            }
+
+            function Q4Function_undo() {
+                document.getElementById('C/D/H/S/NT').disabled = false;
+                document.getElementById('H/D/S/C/NT').disabled = false;
+                document.getElementById('NT/D/H/S/C').disabled = false;
+                document.getElementById('S/D/H/NT/C').disabled = false;
+            }
+        </script>
     </div>
     <div class="footer">
         <ul class="footer-ul">

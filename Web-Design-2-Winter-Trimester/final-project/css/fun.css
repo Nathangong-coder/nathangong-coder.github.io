@@ -1,0 +1,17 @@
+.left iframe,
+.right iframe {
+    width: 100%;
+    margin: auto;
+}
+
+.right img,
+.left img {
+    width: 100%;
+}
+
+@media (min-width:500px) and (max-width:625px) {
+    .iframe {
+        width: 500px;
+        height: 375px;
+    }
+}

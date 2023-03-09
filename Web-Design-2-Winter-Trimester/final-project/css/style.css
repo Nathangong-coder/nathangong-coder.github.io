@@ -234,6 +234,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .footer ul li {
@@ -312,5 +313,38 @@ li:hover~li p {
     }
     .main-block {
         width: 100%
+    }
+}
+
+
+/*Helps the footer become responsive*/
+
+@media (min-width:361px) and (max-width:575px) {
+    .footer ul li {
+        margin: 10px;
+    }
+    .footer {
+        height: 100px;
+    }
+}
+
+@media (min-width:280px)and (max-width:360px) {
+    .footer {
+        height: 150px;
+    }
+    .footer ul li {
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width:280px) {
+    .footer {
+        height: 280px;
+    }
+    .footer ul li {
+        margin: 20px;
+    }
+    .footer ul li p {
+        display: none;
     }
 }
