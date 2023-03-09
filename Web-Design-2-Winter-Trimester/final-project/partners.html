@@ -41,6 +41,49 @@
             });
 
         });
+
+        $(document).ready(function() {
+
+            $('.black-photo-overlay').hide();
+
+            $('.thumb2').click(function(event) {
+
+                event.preventDefault();
+
+                var imageUrl = $(this).attr('href');
+
+                $('.black-photo-overlay').show().css('background-image', 'url(' + imageUrl + ')');
+
+            });
+
+            $('.black-close-photo-overlay').css('cursor', 'pointer').click(function() {
+
+                $('.black-photo-overlay').hide();
+
+            });
+
+        });
+        $(document).ready(function() {
+
+            $('.lower-photo-overlay').hide();
+
+            $('.thumb3').click(function(event) {
+
+                event.preventDefault();
+
+                var imageUrl = $(this).attr('href');
+
+                $('.lower-photo-overlay').show().css('background-image', 'url(' + imageUrl + ')');
+
+            });
+
+            $('.lower-close-photo-overlay').css('cursor', 'pointer').click(function() {
+
+                $('.lower-photo-overlay').hide();
+
+            });
+
+        });
     </script>
 
 </head>
@@ -89,6 +132,16 @@
 
                 </div>
             </div>
+            <div class="black-photo-overlay">
+                <div class="black-close-photo-overlay"><i class="fa fa-times"></i>
+
+                </div>
+            </div>
+            <div class="lower-photo-overlay">
+                <div class="lower-close-photo-overlay"><i class="fa fa-times"></i>
+
+                </div>
+            </div>
             <div class="short-left imgBox">
                 <div class="image-description">
                     <p>One of my 1st times playing bridge</p>
@@ -102,14 +155,14 @@
                     <p>Me & my brother at the Providence Summer Nationals in 2022</p>
                 </div>
                 <a href="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/334937722_722732316013301_1767488610729524337_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=d67T0ZEOzRQAX9CrPaE&_nc_ht=scontent-sea1-1.xx&oh=00_AfAP3QHUcYvK_gCeyBoqibObARN2qhFNxDNpYhqit_CZMw&oe=640C2FF6"
-                    class="thumb"><img src="images/Bridge2.jpg" class="thumb" alt=" "></a>
+                    class="thumb2"><img src="images/Bridge2.jpg" class="thumb2" alt=" "></a>
             </div>
             <div class="middle" onclick="about() ">
                 <div class="image-description">
                     <p>Me playing in the Nationals</p>
                 </div>
                 <a href="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/334939008_203036738976773_3453270289020891460_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=dF9G_PMtCHQAX_7z_WM&_nc_ht=scontent-sea1-1.xx&oh=00_AfCzeh6FnTZLsC2Y-6MDxyOC6nSNJVE2nWO06sAnDFQ9CA&oe=640D236D"
-                    class="thumb"><img src="images/Bridge3.jpg " alt=" " class="thumb"></a>
+                    class="thumb2"><img src="images/Bridge3.jpg " alt=" " class="thumb2"></a>
             </div>
             <div class="middle-right" onclick="about()">
                 <div class="image-description">
@@ -131,7 +184,7 @@
                     <p>Me taking photos of waves</p>
                 </div>
                 <a href="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/334762043_699503921865731_5643450044315759713_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=RxYTpA5rYjIAX-FsApu&_nc_ht=scontent-sea1-1.xx&oh=00_AfBjM76fBGUGW3lTQMz83TxeCMwhn2zSEIU0sRiGYLm2Lw&oe=640CD05A"
-                    class="thumb"><img src="images/Photography2.JPG " alt=" " class="thumb"></a>
+                    class="thumb2"><img src="images/Photography2.JPG " alt=" " class="thumb2"></a>
             </div>
             <div class="middle-left" onclick="about() ">
                 <div class="image-description ">
@@ -162,7 +215,7 @@
                     <p>Me after finishing a long bike ride</p>
                 </div>
                 <a href="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/334934433_759282948941415_9177756338771510836_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=Qo5KbSROWnoAX97pNYQ&_nc_ht=scontent-sea1-1.xx&oh=00_AfCFYu94lpH6mbr6RnQusS3UDXOJWaaJsRmrIWRivVWplQ&oe=640C449E"
-                    class="thumb"><img src="images/biking1.jpg" alt=" " class="thumb"></a>
+                    class="thumb2"><img src="images/biking1.jpg" alt=" " class="thumb2"></a>
             </div>
 
             <div style="clear:both;"></div>
@@ -171,7 +224,7 @@
                     <p>Me biking up Mount Rainier</p>
                 </div>
                 <a href="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/334951404_552629186850799_8915846834895835077_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=gLzRi4knm8kAX-TGsOL&_nc_ht=scontent-sea1-1.xx&oh=00_AfDDXHAJRoagwvTUu-5P1WHpz5BGwpG7kgRJ_7mYjHKZjQ&oe=640D1CE7"
-                    class="thumb"><img src="images/biking2.jpg" alt="" class="thumb"></a>
+                    class="thumb3"><img src="images/biking2.jpg" alt="" class="thumb3"></a>
             </div>
             <div class="middle-left">
                 <div class="image-description">
@@ -207,35 +260,35 @@
                     <p>Me leading the Little Masters Bike Ride</p>
                 </div>
                 <a href="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/334977872_518562993763548_4592312193466220799_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=moHM_xE8UtoAX_ZD29Y&_nc_ht=scontent-sea1-1.xx&oh=00_AfBghmZ69JWAenZobD2g14RAg6dBO0p1kX3bP-laMBcgHA&oe=640C8DBC"
-                    class="thumb"><img src="images/biking5.jpg" alt="" class="thumb"></a>
+                    class="thumb3"><img src="images/biking5.jpg" alt="" class="thumb3"></a>
             </div>
             <div class="middle-left">
                 <div class="image-description">
                     <p>Me biking in Europe</p>
                 </div>
                 <a href="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/334932655_570325758383628_6244214065816730082_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=3vkxFzTbxoUAX_HlSMH&_nc_ht=scontent-sea1-1.xx&oh=00_AfDcO_Em9G6GiilAs9JgY6z3-C6iy2Dw_zS3IlgfsnhSNg&oe=640CFBA1"
-                    class="thumb"><img src="images/biking6.jpg" alt="" class="thumb"></a>
+                    class="thumb3"><img src="images/biking6.jpg" alt="" class="thumb3"></a>
             </div>
             <div class="middle">
                 <div class="image-description">
                     <p>Me hiking in Aasgard Pass</p>
                 </div>
                 <a href="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/334933714_484826230371958_7851733649796387081_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=k6qXcJqtXDkAX_-kGNM&_nc_ht=scontent-sea1-1.xx&oh=00_AfAx2yueC7ZnBfo9nyoe_OUQEyGWJdGCnnyy95mxQ_uOYA&oe=640D77BD"
-                    class="thumb"><img src="images/hiking5.JPG" alt="" class="thumb"></a>
+                    class="thumb3"><img src="images/hiking5.JPG" alt="" class="thumb3"></a>
             </div>
             <div class="middle-right">
                 <div class="image-description">
                     <p>Me on an intense hike</p>
                 </div>
                 <a href="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/334932267_145349895109398_3983615676129743883_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=1DTebnduOyYAX9LyiSa&_nc_ht=scontent-sea1-1.xx&oh=00_AfBdtyvtFyZyojrmHuwym2v5ktbdQBNKMdoHOPiMLinGrw&oe=640DAF14"
-                    class="thumb"><img src="images/hiking3.jpg" alt="" class="thumb"></a>
+                    class="thumb3"><img src="images/hiking3.jpg" alt="" class="thumb3"></a>
             </div>
             <div class="short-right">
                 <div class="image-description">
                     <p>Me and my family before hiking up Aasgard Pass</p>
                 </div>
                 <a href="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/334946214_720638019566920_8433592096613170368_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=wsRT39s7QEkAX_PNitX&_nc_ht=scontent-sea1-1.xx&oh=00_AfDK4yHN_H-0hxTUZAORBHT5JU_uMwQqY9Yea19eMAQ3jg&oe=640DF967"
-                    class="thumb"><img src="images/hiking4.jpg" alt="" class="thumb"></a>
+                    class="thumb3"><img src="images/hiking4.jpg" alt="" class="thumb3"></a>
             </div>
         </div>
     </div>

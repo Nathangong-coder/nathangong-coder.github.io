@@ -42,8 +42,8 @@
 /*Got some of the overlay code from this discussion: https: //community.adobe.com/t5/dreamweaver-discussions/making-an-image-full-screen-when-clicked-on/m-p/7483495#M7096*/
 
 .photo-overlay {
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     position: absolute;
     top: 3;
     left: 0;
@@ -59,6 +59,56 @@
     color: #DFEE06;
     z-index: 2;
     padding: 6px 9px;
+    border: 1px solid #DFEE06;
+}
+
+.black-photo-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 3;
+    left: 0;
+    background-size: cover;
+    z-index: 3;
+}
+
+.black-close-photo-overlay {
+    font-size: 30px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    color: black;
+    z-index: 2;
+    padding: 6px 9px;
+    border: 1px solid black;
+}
+
+.lower-photo-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 8;
+    left: 0;
+    background-size: cover;
+    z-index: 3;
+    margin-top: 100px;
+}
+
+.lower-close-photo-overlay {
+    font-size: 30px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    color: black;
+    z-index: 2;
+    padding: 6px 9px;
+    border: 1px solid black;
+}
+
+.black-close-photo-overlay:hover,
+.close-photo-overlay:hover,
+.lower-close-photo-overlay:hover {
+    border: none;
 }
 
 
